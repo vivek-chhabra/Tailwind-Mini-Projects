@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Mini Projects</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tailwind Mini Projects</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                transition: all 0.2s ease;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- email -->
+        <div class="flex items-center justify-center h-screen bg-zinc-700 p-10">
+            <div class="p-[10px] rounded-[20px] flex flex-col md:flex-row bg-zinc-800 text-white">
+                <div class="left img flex-none rounded-[14px] h-[300px] overflow-hidden w-full md:w-[200px] md:h-[100%] md:rounded-r-none">
+                    <img src="./assets/email/image.jpg" class="rounded-[14px] object-fit cover hover:scale-[1.05] hover:rounded-l-[17px] hover:cursor-pointer h-full w-full md:rounded-r-none" alt="" />
+                </div>
+                <div class="right flex w-full justify-center items-center md:items-start text-center md:text-left flex-col gap-[10px] md:gap-[20px] p-[15px] md:p-[40px] justify-center">
+                    <h2 class="text-xl font-serif">Get diet and fitness tips in your inbox</h2>
+                    <p class="text-sm w-[60%]">Eat better and exercise better. Sign Up for the Diet&Fitness new steller.</p>
+                    <div class="input flex flex-col md:flex-row w-full gap-[20px] mt-[10px]">
+                        <input type="email" placeholder="Enter your email address" class="focus:border-lime-700 md:placeholder:text-left placeholder:text-sm py-[8px] placeholder:text-center px-[15px] text-white md:w-full w-full bg-transparent border-[2px] border-zinc-700 rounded-[8px] outline-none" />
+                        <button class="py-[8px] px-[15px] text-black font-semibold capitalize bg-lime-500 rounded-[8px] hover:bg-lime-700">subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
