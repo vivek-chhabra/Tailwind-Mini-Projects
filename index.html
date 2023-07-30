@@ -5,32 +5,176 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tailwind Mini Projects</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- locomotive css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
         <style>
+            @import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Bacasime+Antique&family=Bodoni+Moda:wght@400;500;600&family=Cormorant+Garamond:wght@300;400;500;600&family=Dai+Banna+SIL:wght@300;400;500;600;700&family=El+Messiri:wght@400;600;700&family=Great+Vibes&family=Libre+Baskerville:wght@400;700&family=Lobster+Two:wght@400;700&family=Lumanosimo&family=Marcellus&family=Montserrat:wght@200;300;400;500;600&family=Mulish:wght@300;400;500;600&family=Narnoor&family=Nunito:wght@200;300;400&family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@200;300;400;500;600;700;800&family=Sacramento&family=Ysabeau+Infant:wght@200;300;400;500;600;700&display=swap");
             * {
                 margin: 0;
                 padding: 0;
                 transition: all 0.2s ease;
-                position: relative;
+                /* position: relative;
+                font-family: "Amiri", serif;
+                font-family: "Bacasime Antique", serif;
+                font-family: "Bodoni Moda", serif;
+                font-family: "Cormorant Garamond", serif;
+                font-family: "Dai Banna SIL", serif;
+                font-family: "El Messiri", sans-serif;
+                font-family: "Great Vibes", cursive;
+                font-family: "Libre Baskerville", serif;
+                font-family: "Lobster Two", cursive;
+                font-family: "Lumanosimo", cursive; */
+                /* (font-family: "Montserrat", sans-serif;) */
+                /* font-family: "Mulish", sans-serif; */
+                /* font-family: "Narnoor", serif; */
+                /* font-family: "Open Sans", sans-serif; */
+                /* font-family: "Playfair Display", serif; */
+                /* font-family: "Poppins", sans-serif; */
+                /* font-family: "Sacramento", cursive; */
+                /* font-family: "Ysabeau Infant", sans-serif; */
+            }
+
+            .email .right p {
+                font-family: "Nunito", sans-serif;
+            }
+
+            body > * > .head {
+                font-family: "Marcellus", serif;
             }
         </style>
     </head>
     <body>
         <!-- email -->
-        <div class="flex items-center justify-center h-screen bg-zinc-700 p-10">
-            <div class="p-[10px] rounded-[20px] flex flex-col md:flex-row bg-zinc-800 text-white">
-                <div class="left img flex-none rounded-[14px] h-[300px] overflow-hidden w-full md:w-[200px] md:h-[100%] md:rounded-r-none">
-                    <img src="./assets/email/image.jpg" class="rounded-[14px] object-fit cover hover:scale-[1.05] hover:rounded-l-[17px] hover:cursor-pointer h-full w-full md:rounded-r-none" alt="" />
+        <div class="email flex gap-[20px] flex-col items-center justify-center min-h-screen bg-zinc-700 p-10">
+            <h1 class="head mb-auto text-white text-[1.8rem] font-bold tracking-[2px]">Subscription Page</h1>
+            <div class="p-[10px] mb-auto rounded-[20px] flex flex-col max-w-[400px] md:max-w-full md:flex-row bg-zinc-800 text-white">
+                <div class="left img flex-none rounded-[14px] h-[250px] overflow-hidden w-full md:w-[200px] md:h-[100%] md:rounded-r-none">
+                    <img src="./assets/email/image.jpg" class="rounded-[14px] cover hover:scale-[1.05] hover:rounded-l-[17px] hover:cursor-pointer h-full w-full md:rounded-r-none" alt="" />
                 </div>
                 <div class="right flex w-full justify-center items-center md:items-start text-center md:text-left flex-col gap-[10px] md:gap-[20px] p-[15px] md:p-[40px] justify-center">
                     <h2 class="text-xl font-serif">Get diet and fitness tips in your inbox</h2>
-                    <p class="text-sm w-[60%]">Eat better and exercise better. Sign Up for the Diet&Fitness new steller.</p>
+                    <p class="text-sm w-[80%]">Eat better and exercise better. Sign Up for the Diet&Fitness new steller.</p>
                     <div class="input flex flex-col md:flex-row w-full gap-[20px] mt-[10px]">
-                        <input type="email" placeholder="Enter your email address" class="focus:border-lime-700 md:placeholder:text-left placeholder:text-sm py-[8px] placeholder:text-center px-[15px] text-white md:w-full w-full bg-transparent border-[2px] border-zinc-700 rounded-[8px] outline-none" />
+                        <input
+                            type="email"
+                            placeholder="Enter your email address"
+                            class="focus:border-lime-700 md:placeholder:text-left placeholder:text-sm py-[8px] placeholder:text-center px-[15px] text-white md:w-full w-full bg-transparent border-[2px] border-zinc-700 rounded-[8px] outline-none" />
                         <button class="py-[8px] px-[15px] text-black font-semibold capitalize bg-lime-500 rounded-[8px] hover:bg-lime-700">subscribe</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- pricing card -->
+        <div class="pricing flex flex-col justify-center items-center gap-[20px] py-[80px] px-[40px] bg-slate-800 min-h-screen text-white">
+            <h1 class="head mb-auto text-white text-[1.8rem] font-bold tracking-[2px]">Pricing Cards</h1>
+            <div class="cards flex gap-[30px] flex-wrap mt-[20px] justify-center items-center">
+                <div class="outer-container mb-auto bg-slate-700 p-[10px] rounded-[10px]">
+                    <div class="top flex text-center flex-col bg-slate-800 p-[30px] rounded-t-[7px] justify-center items-center">
+                        <div class="head uppercase mb-[20px] font-semibold">basic</div>
+                        <div class="content flex flex-col gap-[15px]">
+                            <div class="text flex flex-col gap-[5px]">
+                                <div class="data text-5xl font-serif">100GB</div>
+                                <div class="font-semibold">$1.99/month</div>
+                            </div>
+                            <button class="py-[8px] pb-[10px] px-[30px] mt-[10px] font-semibold rounded-[8px] capitalize border-[2px] border-slate-700 hover:border-violet-800 hover:bg-violet-800">purchase</button>
+                        </div>
+                    </div>
+                    <div class="bottom border-t rounded-b-[7px] border-slate-700 p-[25px] bg-slate-800 flex flex-col items-center justify-center gap-[3px]">
+                        <div class="item item-1 flex gap-[10px] text-sm items-center justify-center font-[600]">
+                            <i class="fa-solid fa-check"></i>
+                            <p>100 GB storage</p>
+                        </div>
+                        <div class="item item-2 flex gap-[10px] text-sm items-center justify-center font-[600]">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Option to add members</p>
+                        </div>
+                        <div class="item item-3 flex gap-[10px] text-sm items-center justify-center font-[600]">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Extra member benefits</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-container mb-auto bg-violet-700 p-[10px] rounded-[10px]">
+                    <div class="top flex text-center flex-col bg-slate-800 p-[30px] rounded-t-[7px] justify-center items-center">
+                        <div class="head uppercase mb-[20px] font-semibold">standard</div>
+                        <div class="content flex flex-col gap-[15px]">
+                            <div class="text flex flex-col gap-[5px]">
+                                <div class="data text-5xl font-serif">200GB</div>
+                                <div class="font-semibold">$3.99/month</div>
+                            </div>
+                            <button class="py-[8px] pb-[10px] px-[30px] mt-[10px] font-semibold rounded-[8px] capitalize border-[2px] border-violet-700 hover:border-violet-800 hover:bg-violet-800">purchase</button>
+                        </div>
+                    </div>
+                    <div class="bottom border-t rounded-b-[7px] border-slate-700 p-[25px] bg-slate-800 flex flex-col items-center justify-center gap-[3px]">
+                        <div class="item item-1 flex gap-[10px] text-sm items-center justify-center font-[600]">
+                            <i class="fa-solid fa-check"></i>
+                            <p>200 GB storage</p>
+                        </div>
+                        <div class="item item-2 flex gap-[10px] text-sm items-center justify-center font-[600]">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Option to add members</p>
+                        </div>
+                        <div class="item item-3 flex gap-[10px] text-sm items-center justify-center font-[600]">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Extra member benefits</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-container mb-auto bg-slate-700 p-[10px] rounded-[10px]">
+                    <div class="top flex text-center flex-col bg-slate-800 p-[30px] rounded-t-[7px] justify-center items-center">
+                        <div class="head uppercase mb-[20px] font-semibold">premium</div>
+                        <div class="content flex flex-col gap-[15px]">
+                            <div class="text flex flex-col gap-[5px]">
+                                <div class="data text-5xl font-serif">2TB</div>
+                                <div class="font-semibold">$8.99/month</div>
+                            </div>
+                            <button class="py-[8px] pb-[10px] px-[30px] mt-[10px] font-semibold rounded-[8px] capitalize border-[2px] border-slate-700 hover:border-violet-800 hover:bg-violet-800">purchase</button>
+                        </div>
+                    </div>
+                    <div class="bottom border-t rounded-b-[7px] border-slate-700 p-[25px] bg-slate-800 flex flex-col items-center justify-center gap-[5px]">
+                        <div class="item item-1 flex gap-[10px] text-sm items-center justify-center font-[600]">
+                            <i class="fa-solid fa-check"></i>
+                            <p>2 TB storage</p>
+                        </div>
+                        <div class="item item-2 flex gap-[10px] text-sm items-center justify-center font-[600]">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Option to add members</p>
+                        </div>
+                        <div class="item item-3 flex gap-[10px] text-sm items-center justify-center font-[600]">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Extra member benefits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/8f93ce6295.js" crossorigin="anonymous"></script>
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        // pricing card
+        const buttons = document.querySelectorAll(".pricing .cards button");
+        const containers = document.querySelectorAll(".pricing .cards .outer-container");
+        let position = 1;
+        let lastPos = 1;
+
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", () => {
+                containers[lastPos].classList.remove("bg-violet-700");
+                buttons[lastPos].classList.remove("border-violet-700");
+                containers[lastPos].classList.add("bg-slate-700");
+                buttons[lastPos].classList.add("border-slate-700");
+
+                containers[i].classList.add("bg-violet-700");
+                buttons[i].classList.add("border-violet-700");
+                lastPos = i;
+            });
+        }
+    </script>
 </html>
