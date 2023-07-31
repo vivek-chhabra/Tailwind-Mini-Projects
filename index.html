@@ -14,23 +14,22 @@
                 padding: 0;
                 transition: all 0.2s ease;
                 box-sizing: border-box;
-                /* position: relative;
-                font-family: "Amiri", serif;
-                font-family: "Bacasime Antique", serif;
-                font-family: "Bodoni Moda", serif;
-                font-family: "Cormorant Garamond", serif;
-                font-family: "Dai Banna SIL", serif;
-                font-family: "El Messiri", sans-serif;
-                font-family: "Great Vibes", cursive;
-                font-family: "Libre Baskerville", serif;
-                font-family: "Lobster Two", cursive;
-                font-family: "Lumanosimo", cursive; */
+                position: relative;
+                /* font-family: "Amiri", serif; */
+                /* font-family: "Bacasime Antique", serif; */
+                /* font-family: "Bodoni Moda", serif; */
+                /* font-family: "Cormorant Garamond", serif; */
+                /* font-family: "Dai Banna SIL", serif; */
+                /* font-family: "El Messiri", sans-serif; */
+                /* font-family: "Great Vibes", cursive; */
+                /* font-family: "Libre Baskerville", serif; */
+                /* font-family: "Lobster Two", cursive; */
+                /* font-family: "Lumanosimo", cursive; */
                 /* (font-family: "Montserrat", sans-serif;) */
                 /* font-family: "Mulish", sans-serif; */
                 /* font-family: "Narnoor", serif; */
                 /* font-family: "Open Sans", sans-serif; */
                 /* font-family: "Playfair Display", serif; */
-                /* font-family: "Poppins", sans-serif; */
                 /* font-family: "Sacramento", cursive; */
                 /* font-family: "Ysabeau Infant", sans-serif; */
             }
@@ -58,11 +57,15 @@
                     opacity: 0;
                 }
             }
+
+            .login-model .head h1 {
+                font-family: "Poppins", sans-serif;
+            }
         </style>
     </head>
-    <body>
+    <body data-scroll-container>
         <!-- email -->
-        <div class="email flex gap-[20px] flex-col items-center justify-center min-h-screen bg-zinc-700 p-10">
+        <section data-scroll-section class="email flex gap-[20px] flex-col items-center justify-center min-h-screen bg-zinc-700 p-10">
             <h1 class="head mb-auto text-white text-[1.8rem] font-bold tracking-[2px]">Subscription Page</h1>
             <div class="p-[10px] mb-auto rounded-[20px] flex flex-col max-w-[400px] md:max-w-full md:flex-row bg-zinc-800 text-white">
                 <div class="left img flex-none rounded-[14px] h-[250px] overflow-hidden w-full md:w-[200px] md:h-[100%] md:rounded-r-none">
@@ -80,10 +83,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- pricing card -->
-        <div class="pricing flex flex-col justify-center items-center gap-[20px] py-[80px] px-[40px] bg-slate-800 min-h-screen text-white">
+        <section data-scroll-section class="pricing flex flex-col justify-center items-center gap-[20px] py-[80px] px-[40px] bg-slate-800 min-h-screen text-white">
             <h1 class="head mb-auto text-white text-[1.8rem] font-bold tracking-[2px]">Pricing Cards</h1>
             <div class="cards flex gap-[30px] flex-wrap mt-[20px] justify-center items-center">
                 <div class="outer-container mb-auto bg-slate-700 p-[10px] rounded-[10px]">
@@ -165,10 +168,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- product model -->
-        <div class="product-model flex flex-col justify-center items-center bg-slate-100 py-[80px] min-h-screen px-[30px]">
+        <section data-scroll-section class="product-model flex flex-col justify-center items-center bg-slate-100 py-[80px] min-h-screen px-[30px]">
             <h1 class="head mb-auto text-black text-[1.8rem] font-[800] tracking-[2px]">Product Model</h1>
             <div class="model h-full flex flex-col mt-10 md:flex-row md:justify-start md:items-start rounded-[20px] gap-[30px] bg-white shadow-lg shadow-gray-400 p-[30px] px-[30px] justify-center items-center">
                 <div class="img h-[200px] flex-none mb-auto">
@@ -201,10 +204,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- image gallery -->
-        <div class="flex flex-col justify-center text-center items-center py-[80px] px-[30px] bg-cyan-50 min-h-screen gap-[30px]">
+        <section data-scroll-section class="flex flex-col justify-center text-center items-center py-[80px] px-[30px] bg-cyan-50 min-h-screen gap-[30px]">
             <h1 class="head mb-auto text-black text-[1.8rem] font-[800] tracking-[2px]">Image Gallery</h1>
             <div class="card-container max-w-[400px] w-full p-[20px] mb-auto mt-[40px] bg-white md:max-w-[800px] md:w-full md:p-[40px] gap-[40px] rounded-3xl shadow-2xl flex flex-col justify-center items-center">
                 <!-- nav -->
@@ -226,9 +229,9 @@
                         <div class="w-[70%] h-[2px] bg-black rounded-lg opacity-0 group-hover:opacity-100 group-hover:bg-cyan-500"></div>
                     </li>
                 </ul>
-                <div class="flex flex-col md:flex-row  w-full space-between items-center gap-[20px]">
+                <div class="flex flex-col md:flex-row w-full space-between items-center gap-[20px]">
                     <div class="search w-full md:w-fit justify-between flex border-b-[2px] border-b-gray justify-center items-center text-gray-400 text-lg">
-                        <input type="text" name="" placeholder="Search" class="border-none placeholder:font-normal bg-transparent outline-none py-[7px] px-[10px]" id="">
+                        <input type="text" name="" placeholder="Search" class="border-none placeholder:font-normal bg-transparent outline-none py-[7px] px-[10px]" id="" />
                         <i class="fa-solid fa-magnifying-glass mr-2"></i>
                     </div>
                     <button class="py-[7px] w-full md:w-fit px-[30px] pb-[10px] ml-auto hover:bg-cyan-500 text-sm font-semibold rounded-md bg-black text-white">Upload</button>
@@ -237,7 +240,7 @@
                 <!-- images -->
                 <div class="flex flex-col md:flex-row flex-wrap gap-[15px] [&>*]:rounded-[5px] justify-center items-center">
                     <div class="group relative">
-                        <img src="./assets/image-gallery/images/image1.jpg" alt="" class="w-full md:w-[230px] rounded">
+                        <img src="./assets/image-gallery/images/image1.jpg" alt="" class="w-full md:w-[230px] rounded" />
                         <div class="absolute text-sm bottom-0 left-0 flex justify-between rounded-b items-center w-full opacity-0 group-hover:opacity-100 p-[8px] md:py-1 md:px-2 bg-black bg-opacity-40 text-white gap-[10px]">
                             <div class="left flex flex-col text-left text-xs">
                                 <div class="capitalize">abstract painting</div>
@@ -246,11 +249,11 @@
                                     <p>35 Shares</p>
                                 </div>
                             </div>
-                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right">
+                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right" />
                         </div>
                     </div>
                     <div class="group relative">
-                        <img src="./assets/image-gallery/images/image2.jpg" alt="" class="w-full md:w-[230px] rounded">
+                        <img src="./assets/image-gallery/images/image2.jpg" alt="" class="w-full md:w-[230px] rounded" />
                         <div class="absolute text-sm bottom-0 left-0 flex justify-between rounded-b items-center w-full opacity-0 group-hover:opacity-100 p-[8px] md:py-1 md:px-2 bg-black bg-opacity-40 text-white gap-[10px]">
                             <div class="left flex flex-col text-left text-xs">
                                 <div class="capitalize">abstract painting</div>
@@ -259,11 +262,11 @@
                                     <p>35 Shares</p>
                                 </div>
                             </div>
-                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right">
+                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right" />
                         </div>
                     </div>
                     <div class="group relative">
-                        <img src="./assets/image-gallery/images/image3.jpg" alt="" class="w-full md:w-[230px] rounded">
+                        <img src="./assets/image-gallery/images/image3.jpg" alt="" class="w-full md:w-[230px] rounded" />
                         <div class="absolute text-sm bottom-0 left-0 flex justify-between rounded-b items-center w-full opacity-0 group-hover:opacity-100 p-[8px] md:py-1 md:px-2 bg-black bg-opacity-40 text-white gap-[10px]">
                             <div class="left flex flex-col text-left text-xs">
                                 <div class="capitalize">abstract painting</div>
@@ -272,11 +275,11 @@
                                     <p>35 Shares</p>
                                 </div>
                             </div>
-                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right">
+                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right" />
                         </div>
                     </div>
                     <div class="group relative">
-                        <img src="./assets/image-gallery/images/image4.jpg" alt="" class="w-full md:w-[230px] rounded">
+                        <img src="./assets/image-gallery/images/image4.jpg" alt="" class="w-full md:w-[230px] rounded" />
                         <div class="absolute text-sm bottom-0 left-0 flex justify-between rounded-b items-center w-full opacity-0 group-hover:opacity-100 p-[8px] md:py-1 md:px-2 bg-black bg-opacity-40 text-white gap-[10px]">
                             <div class="left flex flex-col text-left text-xs">
                                 <div class="capitalize">abstract painting</div>
@@ -285,11 +288,11 @@
                                     <p>35 Shares</p>
                                 </div>
                             </div>
-                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right">
+                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right" />
                         </div>
                     </div>
                     <div class="group relative">
-                        <img src="./assets/image-gallery/images/image5.jpg" alt="" class="w-full md:w-[230px] rounded">
+                        <img src="./assets/image-gallery/images/image5.jpg" alt="" class="w-full md:w-[230px] rounded" />
                         <div class="absolute text-sm bottom-0 left-0 flex justify-between rounded-b items-center w-full opacity-0 group-hover:opacity-100 p-[8px] md:py-1 md:px-2 bg-black bg-opacity-40 text-white gap-[10px]">
                             <div class="left flex flex-col text-left text-xs">
                                 <div class="capitalize">abstract painting</div>
@@ -298,11 +301,11 @@
                                     <p>35 Shares</p>
                                 </div>
                             </div>
-                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right">
+                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right" />
                         </div>
                     </div>
                     <div class="group relative">
-                        <img src="./assets/image-gallery/images/image6.jpg" alt="" class="w-full md:w-[230px] rounded">
+                        <img src="./assets/image-gallery/images/image6.jpg" alt="" class="w-full md:w-[230px] rounded" />
                         <div class="absolute text-sm bottom-0 left-0 flex justify-between rounded-b items-center w-full opacity-0 group-hover:opacity-100 p-[8px] md:py-1 md:px-2 bg-black bg-opacity-40 text-white gap-[10px]">
                             <div class="left flex flex-col text-left text-xs">
                                 <div class="capitalize">abstract painting</div>
@@ -311,12 +314,49 @@
                                     <p>35 Shares</p>
                                 </div>
                             </div>
-                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right">
+                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right" />
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- login model -->
+        <section data-scroll-section class="login-model flex flex-col mx-auto py-[80px] px-[30px] justify-center flex-center bg-rose-50 min-h-screen">
+            <h1 class="head mb-auto text-black text-center text-[1.8rem] font-[800] tracking-[2px] w-full">Login Model</h1>
+            <div class="flex mt-[50px] flex-col mb-auto login-model shadow-2xl md:flex-row md:max-w-[900px] max-w-[500px] mx-auto w-full bg-white rounded-3xl">
+                <i class="fa-solid fa-xmark text-black text-xl px-[8px] py-[5px] bg-white hover:cursor-pointer rounded-3xl absolute right-3 top-3 z-50"></i>
+                <div class="info py-[20px] px-[30px] flex flex-col justify-center items-center">
+                    <div class="top flex flex-col text-left">
+                        <div class="head flex justify-between">
+                            <h1 class="text-xl font-bold mb-7">Login</h1>
+                        </div>
+                        <p class="text-sm font-semibold">Login to your account to upload or download the pictures, videos and music</p>
+                        <div class="mt-7 flex flex-col gap-[15px]">
+                            <input type="email" name="" class="rounded border-[1px] border-black outline-none none py-[10px] pb-[12px] px-[10px] placeholder:text-sm" placeholder="Enter your email address" id="" />
+                            <button class="bg-cyan-700 font-semibold w-full group hover:cursor-pointer text-center rounded text-white bg-black py-[10px] px-[10px] flex justify-center items-center gap-[10px]">
+                                Next
+                                <i class="fa-solid fa-long-arrow-right mt-[3px] group-hover:translate-x-2"></i>
+                            </button>
+                            <p class="w-fit text-cyan-700 text-sm font-semibold mx-auto mt-3 hover:cursor-pointer hover:text-cyan-500">Forgot Password</p>
+                        </div>
+                    </div>
+                    <div class="my-[20px] mt-[25px] w-[90%] mx-auto border-b-[2px] border-b-gray-300"></div>
+                    <div class="bottom gap-5 w-full flex flex-col justify-center items-center">
+                        <p class="text-gray-400 mx-auto font-semibold text-sm">or login with</p>
+                        <button class="text-black font-semibold w-full group hover:cursor-pointer hover:bg-cyan-700 hover:text-white text-center rounded bg-white border border-cyan-700 py-[7px] px-[10px] flex justify-center items-center gap-[10px]">
+                            <img src="./assets/login-model/facebook.png" class="w-8 ">
+                            Facebook
+                        </button>
+                        <button class="text-black font-semibold w-full group hover:cursor-pointer te hover:bg-cyan-700 hover:text-white xt-center rounded bg-white border border-cyan-700 py-[7px] px-[10px] flex justify-center items-center gap-[10px]">
+                            <img src="./assets/login-model/google.png" class="w-[30px] ">
+                            Google
+                        </button>
+                    </div>
+                </div>
+                <img src="./assets/login-model/image.jpg" class="hidden md:flex md:md:h-[600px] md:rounded-r-3xl md:ml-auto" alt="" />
+            </div>
+        </section>
     </body>
 
     <!-- fontawesome -->
