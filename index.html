@@ -13,6 +13,7 @@
                 margin: 0;
                 padding: 0;
                 transition: all 0.2s ease;
+                box-sizing: border-box;
                 /* position: relative;
                 font-family: "Amiri", serif;
                 font-family: "Bacasime Antique", serif;
@@ -197,6 +198,121 @@
                             <img src="./assets/product model/heart.png" class="w-6" alt="" />
                             Add to watchlist
                         </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- image gallery -->
+        <div class="flex flex-col justify-center text-center items-center py-[80px] px-[30px] bg-cyan-50 min-h-screen gap-[30px]">
+            <h1 class="head mb-auto text-black text-[1.8rem] font-[800] tracking-[2px]">Image Gallery</h1>
+            <div class="card-container max-w-[400px] w-full p-[20px] mb-auto mt-[40px] bg-white md:max-w-[800px] md:w-full md:p-[40px] gap-[40px] rounded-3xl shadow-2xl flex flex-col justify-center items-center">
+                <!-- nav -->
+                <ul class="nav flex md:w-full text-right flex-col md:flex-row justify-end hover:cursor-pointer gap-[5px] md:gap-[20px] font-semibold">
+                    <li class="capitalize items-center list-style-none flex flex-col group gap-[5px] hover:text-cyan-500">
+                        vector
+                        <div class="w-[70%] h-[2px] bg-black rounded-lg opacity-[0] group-hover:opacity-[100] group-hover:bg-cyan-500"></div>
+                    </li>
+                    <li class="capitalize items-center list-style-none flex flex-col group gap-[5px] hover:text-cyan-500">
+                        illustrations
+                        <div class="w-[70%] h-[2px] bg-black rounded-lg opacity-0 group-hover:opacity-100 group-hover:bg-cyan-500"></div>
+                    </li>
+                    <li class="capitalize items-center list-style-none flex flex-col group gap-[5px] hover:text-cyan-500">
+                        images
+                        <div class="w-[70%] h-[2px] bg-black rounded-lg opacity-0 group-hover:opacity-100 group-hover:bg-cyan-500"></div>
+                    </li>
+                    <li class="capitalize items-center list-style-none flex flex-col group gap-[5px] hover:text-cyan-500">
+                        icons
+                        <div class="w-[70%] h-[2px] bg-black rounded-lg opacity-0 group-hover:opacity-100 group-hover:bg-cyan-500"></div>
+                    </li>
+                </ul>
+                <div class="flex flex-col md:flex-row  w-full space-between items-center gap-[20px]">
+                    <div class="search w-full md:w-fit justify-between flex border-b-[2px] border-b-gray justify-center items-center text-gray-400 text-lg">
+                        <input type="text" name="" placeholder="Search" class="border-none placeholder:font-normal bg-transparent outline-none py-[7px] px-[10px]" id="">
+                        <i class="fa-solid fa-magnifying-glass mr-2"></i>
+                    </div>
+                    <button class="py-[7px] w-full md:w-fit px-[30px] pb-[10px] ml-auto hover:bg-cyan-500 text-sm font-semibold rounded-md bg-black text-white">Upload</button>
+                </div>
+
+                <!-- images -->
+                <div class="flex flex-col md:flex-row flex-wrap gap-[15px] [&>*]:rounded-[5px] justify-center items-center">
+                    <div class="group relative">
+                        <img src="./assets/image-gallery/images/image1.jpg" alt="" class="w-full md:w-[230px] rounded">
+                        <div class="absolute text-sm bottom-0 left-0 flex justify-between rounded-b items-center w-full opacity-0 group-hover:opacity-100 p-[8px] md:py-1 md:px-2 bg-black bg-opacity-40 text-white gap-[10px]">
+                            <div class="left flex flex-col text-left text-xs">
+                                <div class="capitalize">abstract painting</div>
+                                <div class="likes flex gap-[5px]">
+                                    <p>250 Likes</p>
+                                    <p>35 Shares</p>
+                                </div>
+                            </div>
+                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right">
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <img src="./assets/image-gallery/images/image2.jpg" alt="" class="w-full md:w-[230px] rounded">
+                        <div class="absolute text-sm bottom-0 left-0 flex justify-between rounded-b items-center w-full opacity-0 group-hover:opacity-100 p-[8px] md:py-1 md:px-2 bg-black bg-opacity-40 text-white gap-[10px]">
+                            <div class="left flex flex-col text-left text-xs">
+                                <div class="capitalize">abstract painting</div>
+                                <div class="likes flex gap-[5px]">
+                                    <p>250 Likes</p>
+                                    <p>35 Shares</p>
+                                </div>
+                            </div>
+                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right">
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <img src="./assets/image-gallery/images/image3.jpg" alt="" class="w-full md:w-[230px] rounded">
+                        <div class="absolute text-sm bottom-0 left-0 flex justify-between rounded-b items-center w-full opacity-0 group-hover:opacity-100 p-[8px] md:py-1 md:px-2 bg-black bg-opacity-40 text-white gap-[10px]">
+                            <div class="left flex flex-col text-left text-xs">
+                                <div class="capitalize">abstract painting</div>
+                                <div class="likes flex gap-[5px]">
+                                    <p>250 Likes</p>
+                                    <p>35 Shares</p>
+                                </div>
+                            </div>
+                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right">
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <img src="./assets/image-gallery/images/image4.jpg" alt="" class="w-full md:w-[230px] rounded">
+                        <div class="absolute text-sm bottom-0 left-0 flex justify-between rounded-b items-center w-full opacity-0 group-hover:opacity-100 p-[8px] md:py-1 md:px-2 bg-black bg-opacity-40 text-white gap-[10px]">
+                            <div class="left flex flex-col text-left text-xs">
+                                <div class="capitalize">abstract painting</div>
+                                <div class="likes flex gap-[5px]">
+                                    <p>250 Likes</p>
+                                    <p>35 Shares</p>
+                                </div>
+                            </div>
+                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right">
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <img src="./assets/image-gallery/images/image5.jpg" alt="" class="w-full md:w-[230px] rounded">
+                        <div class="absolute text-sm bottom-0 left-0 flex justify-between rounded-b items-center w-full opacity-0 group-hover:opacity-100 p-[8px] md:py-1 md:px-2 bg-black bg-opacity-40 text-white gap-[10px]">
+                            <div class="left flex flex-col text-left text-xs">
+                                <div class="capitalize">abstract painting</div>
+                                <div class="likes flex gap-[5px]">
+                                    <p>250 Likes</p>
+                                    <p>35 Shares</p>
+                                </div>
+                            </div>
+                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right">
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <img src="./assets/image-gallery/images/image6.jpg" alt="" class="w-full md:w-[230px] rounded">
+                        <div class="absolute text-sm bottom-0 left-0 flex justify-between rounded-b items-center w-full opacity-0 group-hover:opacity-100 p-[8px] md:py-1 md:px-2 bg-black bg-opacity-40 text-white gap-[10px]">
+                            <div class="left flex flex-col text-left text-xs">
+                                <div class="capitalize">abstract painting</div>
+                                <div class="likes flex gap-[5px]">
+                                    <p>250 Likes</p>
+                                    <p>35 Shares</p>
+                                </div>
+                            </div>
+                            <img src="./assets/image-gallery/images/bookmark.svg" alt="" class="right">
+                        </div>
                     </div>
                 </div>
             </div>
